@@ -7,7 +7,7 @@
 
 ## About <a name = "about"></a>
 
-This project aims to convert Kubernetes container liveness/readiness probe command to HTTP request. Probe command can cause a lot zombies process when the host having high disk i/o usage. We discoverd this issue while investigating https://github.com/containerd/containerd/issues/7496.
+This project aims to convert Kubernetes container liveness/readiness probe command to HTTP request. When the host having high disk i/o usage, probe command left a lot of zombie process that can cause process leak. We discoverd this issue while investigating https://github.com/containerd/containerd/issues/7496.
 
 ## Getting Started <a name = "getting_started"></a>
 
